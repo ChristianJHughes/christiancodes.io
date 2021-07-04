@@ -1,7 +1,11 @@
 {
   "name": "christiancodes.io",
-  "version": "0.1.0",
   "private": true,
+  "version": "1.0.0",
+  "description": "The christiancodes.io website.",
+  "homepage": "https://github.com/ChristianJHughes/christiancodes.io#readme",
+  "repository": "github:ChristianJHughes/christiancodes.io",
+  "author": "Christian Hughes <christian.hughes@hey.com> (https://christiancodes.io)",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -9,7 +13,7 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "11.0.1",
+    "next": "latest",
     "react": "17.0.2",
     "react-dom": "17.0.2"
   },
