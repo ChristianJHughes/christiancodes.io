@@ -8,7 +8,7 @@ export default function Home() {
       <h1 style={{ fontSize: "96px", margin: "0 0 24px 0" }}>
         Christian Hughes
       </h1>
-      <h2>I'm learning NextJS</h2>
+      <h2>Currently learning NextJS</h2>
       <a
         style={{ color: "blue" }}
         href="https://github.com/ChristianJHughes/christiancodes.io"
