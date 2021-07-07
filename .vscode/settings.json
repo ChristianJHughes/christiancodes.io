@@ -1,0 +1,18 @@
+{
+  "files.associations": {
+    "*.js": "javascriptreact"
+  },
+  // Tailwind Extension Reccomendation
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  // Tailwind Extension Reccomendation
+  "css.validate": false,
+  // Configure TailwindCSS Intellisense with `classname` library:
+  // https://github.com/tailwindlabs/tailwindcss-intellisense/issues/129#issuecomment-737380595
+  "tailwindCSS.experimental.classRegex": [
+    ["(?:cn)\\(([^)]*)\\)", "\"([^\"]*)\""],
+    ["(?:cn)\\(([^)]*)\\)", "'([^']*')"],
+    ["(?:cn)\\(([^)]*)\\)", "`([^`]*`)"]
+  ]
+}
