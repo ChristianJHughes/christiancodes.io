@@ -11,20 +11,20 @@ Running the project quick and easy! [Node.js `14.x`](https://nodejs.org/en/) is 
 
 1. Clone the repository:
 
-```bash
-git clone https://github.com/ChristianJHughes/christiancodes.io.git
-```
+    ```bash
+    git clone https://github.com/ChristianJHughes/christiancodes.io.git
+    ```
 
-2. Install project dependencies:
+1. Install project dependencies:
 
-```bash
-npm install
-```
+    ```bash
+    npm install
+    ```
 
-3. Start the Next.js development server:
+1. Start the Next.js development server:
 
-```bash
-npm run dev
-```
+    ```bash
+    npm run dev
+    ```
 
 Congrats! The site is running locally at [http://localhost:3000](http://localhost:3000).
