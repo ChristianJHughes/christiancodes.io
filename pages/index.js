@@ -14,7 +14,7 @@ export default function Home() {
         <Heading isLarge />
         <h2>Currently learning NextJS</h2>
         <a
-          className="text-blue-500 hover:text-blue-600 text-xl"
+          className="text-xl text-blue-500 hover:text-blue-600"
           href="https://github.com/ChristianJHughes/christiancodes.io"
         >
           STAY TUNED
