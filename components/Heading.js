@@ -1,9 +1,9 @@
 import cn from "classnames";
 
-export default function Heading({ isLarge }) {
+export default function Heading({ isLarge, text }) {
   const classes = cn({
-    "text-9xl": isLarge,
+    "text-6xl font-bold": isLarge,
     "text-lg": !isLarge,
   });
-  return <h1 className={classes}>Christian Hughes</h1>;
+  return <h1 className={classes}>{text}</h1>;
 }
