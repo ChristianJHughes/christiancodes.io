@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Layout>
         <Heading isLarge text="Christian Hughes" />
-        <h2>I`&apos;`m learning NextJS!</h2>
+        <h2>I&apos;m learning NextJS!</h2>
         <a
           className="text-xl font-bold text-blue-400 hover:text-blue-600"
           href="https://github.com/ChristianJHughes/christiancodes.io"
