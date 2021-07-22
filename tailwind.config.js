@@ -7,6 +7,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: { sans: ["Inter", ...fontFamily.sans] },
+      padding: ["focus"],
       animation: { wave: "wave 1.5s linear both 1" },
       transitionProperty: {
         backgroundColor: "background-color",

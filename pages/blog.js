@@ -5,7 +5,7 @@ export default function Blog() {
   return (
     <>
       <Layout>
-        <Heading isLarge text="Blog coming soon..." />
+        <Heading isLarge>Blog coming soon...</Heading>
       </Layout>
     </>
   );
