@@ -16,7 +16,7 @@ export default function Home() {
             <span className="inline-block mr-3.5 duration-1000 animate-wave">
               👋
             </span>
-            Hi, I'm Christian!
+            Hi, I&apos;m Christian!
           </Heading>
           <Image
             src="/images/christian-headshot.jpeg"
