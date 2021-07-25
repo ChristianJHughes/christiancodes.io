@@ -3,6 +3,7 @@ import Image from "next/image";
 import Script from "next/script";
 import Heading from "../components/heading";
 import Layout from "../components/layout";
+import christianHeadshot from "../public/images/christian-headshot.jpeg";
 
 export default function Home() {
   return (
@@ -19,7 +20,7 @@ export default function Home() {
           </Heading>
           <Heading isLarge>Hi, I&apos;m Christian!</Heading>
           <Image
-            src="/images/christian-headshot.jpeg"
+            src={christianHeadshot}
             className="block overflow-hidden rounded-full"
             width={200}
             height={200}
