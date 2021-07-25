@@ -1,17 +1,18 @@
 import Logo from "./logo";
 import DarkModeToggle from "./dark-mode-toggle";
 import Link from "next/link";
-import { IoLogoLinkedin } from "react-icons/io";
-import { IoLogoGithub } from "react-icons/io";
-
 import cn from "classnames";
+import { useRouter } from "next/router";
+import { IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { Fade as Hamburger } from "hamburger-react";
+import { useState } from "react";
 
 function HeaderGroup({ children, isNav }) {
   const Element = isNav ? "nav" : "div";
 
   return (
-    <Element>
-      <ol className="flex items-center pr-4 mr-4 space-x-4 leading-6 duration-300 border-r-2 border-gray-200 dark:border-gray-700 transition-color">
+    <Element role={isNav ? "navigation" : undefined}>
+      <ol className="flex items-center pr-3 my-1 mr-3 space-x-3 leading-6 duration-300 border-r-2 border-gray-200 opacity-100 sm:pr-4 sm:mr-4 sm:space-x-4 sm:my-0 dark:border-gray-700 transition-color">
         {children}
       </ol>
     </Element>
@@ -23,38 +24,68 @@ function SocialLink({ icon, ariaLabel }) {
   return (
     <li>
       <a href="https://github.com" aria-label={ariaLabel}>
-        <Icon className="w-6 h-6 dark:hover:text-blue-300 hover:text-blue-700" />
+        <Icon className="w-6 h-6 py-[2px] box-content dark:hover:text-blue-500 hover:text-blue-700" />
       </a>
     </li>
   );
 }
 
 function NavigationLink({ href, text }) {
+  const router = useRouter();
+
+  const navigationLinkClasses = cn(
+    {
+      "dark:border-white border-black dark:hover:border-blue-500 hover:border-blue-700":
+        router.asPath === href,
+      "border-transparent": router.asPath != href,
+    },
+    "inline-block pt-[6px] pb-1 mx-0.5 font-semibold text-l leading-none border-b-2 dark:hover:text-blue-500 hover:text-blue-700 hover:-translate-y-0.5 transform-translate duration-100"
+  );
+
+  router.asPath === href;
+
   return (
     <li>
       <Link href={href}>
-        <a className="inline-block pb-1 pt-1.5 px-0.5 font-semibold leading-none border-b-2 border-transparent dark:hover:text-blue-300 hover:border-blue-700 hover:text-blue-700 dark:hover:border-blue-300">
-          {text}
-        </a>
+        <a className={navigationLinkClasses}>{text}</a>
       </Link>
     </li>
   );
 }
 
 export default function Header({ showBorder }) {
+  const [isOpen, setOpen] = useState(false);
+
   const headerClasses = cn(
-    "sticky top-0 w-full px-6 py-3 space-y-2 bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 border-b bg-white border-gray-200 border-opacity-0 dark:border-opacity-0 dark:border-gray-800 transition-backgroundColor duration-300 mb-6 z-10",
+    "sticky top-0 w-full pl-4 pr-2 py-2 sm:px-6 sm:py-3 space-y-2 bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 border-b bg-white border-gray-200 border-opacity-0 dark:border-opacity-0 dark:border-gray-800 duration-200 z-10 transition-nav h-[65px]",
     {
-      "border-opacity-100 dark:border-opacity-100 transition-borderColor backdrop-blur":
-        showBorder,
+      "border-opacity-100 dark:border-opacity-100 backdrop-blur": showBorder,
+      "h-[105px]": isOpen,
+    }
+  );
+
+  const headerItemsClasses = cn(
+    "items-center justify-center w-full sm:w-auto mb-1 sm:mb-0 flex transition-opacity duration-200",
+    {
+      "opacity-0 sm:flex sm:opacity-100": !isOpen,
+      "opacity-100": isOpen,
     }
   );
 
   return (
     <header className={headerClasses}>
-      <div className="flex flex-col items-center justify-between w-full max-w-4xl mx-auto border-gray-200 md:flex-row md:space-y-0 divide-solid dark:border-gray-800">
+      <div className="flex flex-wrap items-center justify-between w-full max-w-4xl mx-auto border-gray-200 dark:border-gray-800">
         <Logo />
-        <div className="flex items-center">
+        <div className="sm:hidden">
+          <Hamburger
+            toggled={isOpen}
+            toggle={setOpen}
+            size={24}
+            label="Show Navigation"
+            rounded
+          />
+        </div>
+        <div className={headerItemsClasses}>
           <HeaderGroup isNav>
             <NavigationLink href="/blog" text="Blog" />
             <NavigationLink href="/about" text="About" />

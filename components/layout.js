@@ -3,16 +3,10 @@ import { useInView } from "react-intersection-observer";
 
 export default function Layout({ children }) {
   const { ref, inView, entry } = useInView();
-  // const { ref, inView, entry } = useInView({
-  //   /* Optional options */
-  //   threshold: 0,
-  //   // root: divRef.current,
-  //   // rootMargin: "-50px 0px 0px calc(-100% +50px)",
-  // });
 
   return (
     <>
-      <div className="h-14" ref={ref}></div>
+      <div className="absolute h-[1px] sm:h-14 sm:static" ref={ref}></div>
       <Header showBorder={entry && !inView} />
       <main
         id="main"

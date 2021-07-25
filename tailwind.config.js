@@ -12,6 +12,7 @@ module.exports = {
       transitionProperty: {
         backgroundColor: "background-color",
         borderColor: "border-color, background-color",
+        nav: "height, background-color, border-color, opacity",
       },
       keyframes: {
         wave: {
