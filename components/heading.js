@@ -1,9 +1,15 @@
 import cn from "classnames";
 
-export default function Heading({ isLarge, text }) {
-  const classes = cn({
-    "text-6xl font-bold": isLarge,
-    "text-lg": !isLarge,
-  });
-  return <h1 className={classes}>{text}</h1>;
+// This is dumb.
+export default function Heading({ children, className, isLarge, isLarger }) {
+  const classes = cn(
+    {
+      "text-4xl sm:text-6xl font-extrabold mb-8": isLarge,
+      "text-7xl sm:text-6xl font-extrabold mb-8": isLarger,
+      "text-2xg mb-6": !isLarge,
+    },
+    "flex items-center justify-center",
+    className
+  );
+  return <h1 className={classes}>{children}</h1>;
 }

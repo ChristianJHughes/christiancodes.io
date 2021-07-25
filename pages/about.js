@@ -5,7 +5,7 @@ export default function About() {
   return (
     <>
       <Layout>
-        <Heading isLarge text="About coming soon..." />
+        <Heading isLarge>About coming soon...</Heading>
       </Layout>
     </>
   );
