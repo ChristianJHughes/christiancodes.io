@@ -57,7 +57,7 @@ export default function Header({ showBorder }) {
   const [isOpen, setOpen] = useState(false);
 
   const headerClasses = cn(
-    "sticky top-0 w-full pl-4 pr-2 py-2 sm:px-6 sm:py-3 space-y-2 bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 border-b bg-white border-gray-200 border-opacity-0 dark:border-opacity-0 dark:border-gray-800 duration-200 z-10 transition-nav h-[65px]",
+    "sticky top-0 w-full pl-4 pr-2 py-2 sm:px-6 sm:py-3 space-y-2 bg-white dark:bg-gray-900 bg-opacity-90 dark:bg-opacity-90 border-b bg-white border-gray-200 border-opacity-0 dark:border-opacity-0 dark:border-gray-800 duration-300 z-10 transition-nav h-[65px]",
     {
       "border-opacity-100 dark:border-opacity-100 backdrop-blur": showBorder,
       "h-[105px]": isOpen,
@@ -65,7 +65,7 @@ export default function Header({ showBorder }) {
   );
 
   const headerItemsClasses = cn(
-    "items-center justify-center w-full sm:w-auto mb-1 sm:mb-0 flex transition-opacity duration-200",
+    "items-center justify-center w-full sm:w-auto mb-1 sm:mb-0 flex transition-opacity duration-300",
     {
       "opacity-0 sm:flex sm:opacity-100": !isOpen,
       "opacity-100": isOpen,
