@@ -44,7 +44,7 @@ export default function Home() {
           </Heading>
 
           <p className="self-center max-w-md mx-auto font-semibold text-gray-700 text-md sm:text-lg dark:text-gray-200">
-            You'll find me working on the web at{" "}
+            You&apos;l find me working on the web at{" "}
             <Link href="https://ramseysolutions.com/">Ramsey Solutions</Link> in
             beautiful Nashville, TN.
           </p>
@@ -60,7 +60,7 @@ export default function Home() {
               <Link href="/blog">Building a Blog with Next.js & Tailwind</Link>
             </Heading>
             <p className="font-medium dark:text-gray-200">
-              How'd I build this thing?
+              How&apos;d I build this thing?
             </p>
           </div>
           <p className="italic font-medium dark:italic dark:text-gray-200">
@@ -70,7 +70,7 @@ export default function Home() {
 
         <Slice size="lg" divider>
           <Heading level={3} size="md">
-            💻 What I'm Working On
+            💻 What I&apos;m Working On
           </Heading>
           <Heading level={5} size="sm">
             <Link href="https://ramseysolutions.com/">@ Ramsey Solutions</Link>
@@ -99,7 +99,7 @@ export default function Home() {
             </li>
           </ul>
           <p className="mb-4 font-medium dark:text-gray-200">
-            Lately I've been diving deep into the React ecosystem -- the
+            Lately I&apos;ve been diving deep into the React ecosystem -- the
             developer experience offered by frameworks like{" "}
             <Link href="https://nextjs.org/">Next.js</Link> and{" "}
             <Link href="https://www.gatsbyjs.org/">Gatsby</Link> is exceptional.
