@@ -13,7 +13,6 @@ class MyDocument extends Document {
             type="font/woff2"
             crossOrigin="anonymous"
           />
-          <script>{`function(l){var i,s={touchend:function(){}};for(i in s)l.addEventListener(i,s)})(document);`}</script>
         </Head>
         <body className="text-black duration-300 bg-white transition-backgroundColor dark:text-white dark:bg-gray-900 lg:px-0">
           <a
