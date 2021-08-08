@@ -63,7 +63,7 @@ export default function Home() {
               How&apos;d I build this thing?
             </p>
           </div>
-          <p className="italic font-medium dark:italic dark:text-gray-200">
+          <p className="font-semibold dark:text-gray-200">
             <em>👉&nbsp; More blogs are on the way!</em>
           </p>
         </Slice>
