@@ -9,7 +9,7 @@ export default function Slice({ center, size, className, children, divider }) {
       "py-8": size == "lg",
       "py-12": size == "xl",
       "items-center text-center": center,
-      "border-b-2 border-gray-700": divider,
+      "border-b-2 border-gray-400 dark:border-gray-700": divider,
     },
     "mx-5 px-3 md:mx-auto md:px-5 flex flex-col max-w-3xl",
     className

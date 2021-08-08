@@ -15,12 +15,12 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="px-6 pt-16 pb-12">
+    <footer className="px-6 pt-12 pb-12 sm:pt-16">
       <div className="flex flex-col flex-wrap items-center justify-between max-w-4xl mx-auto sm:items-start sm:flex-row">
-        <div className="mb-8 sm:mb-0">
+        <div className="flex flex-col items-center mb-6 sm:block sm:mb-0">
           <Logo className="mb-3" />
           <p className="text-sm font-medium text-gray-600 dark:text-gray-200">
-            👋&nbsp; Have a great {days[todaysDate.getDay()]}!
+            👋 Have a great {days[todaysDate.getDay()]}!
           </p>
         </div>
         <div className="flex gap-20 mb-8">

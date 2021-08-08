@@ -25,7 +25,7 @@ export default function Home() {
             ></Image>
           </div>
 
-          <Heading size="xl" className="text-left">
+          <Heading size="xl" className="text-left whitespace-nowrap">
             <span className="inline-block duration-1000 animate-wave">👋</span>{" "}
             Hi, I&apos;m Christian!
           </Heading>
@@ -64,20 +64,20 @@ export default function Home() {
             </p>
           </div>
           <p className="font-semibold dark:text-gray-200">
-            <em>👉&nbsp; More blogs are on the way!</em>
+            <em>👉 More blogs are on the way!</em>
           </p>
         </Slice>
 
         <Slice size="xl" divider>
           <Heading level={3} size="md">
-            💻 What I&apos;m Working On
+            💻 Work I&apos;m Doing
           </Heading>
           <Heading level={5} size="sm">
             <Link href="https://ramseysolutions.com/">@ Ramsey Solutions</Link>
           </Heading>
           <ul className="flex flex-col gap-1 mb-6 font-medium leading-relaxed list-inside dark:text-gray-200">
             <li>
-              • 🧰&nbsp; Building out front-end tooling for our{" "}
+              • 🧰 Building out front-end tooling for our{" "}
               <strong>CMS Platform</strong>, serving{" "}
               <Link href="https://www.ramseysolutions.com/ramseyplus/financial-peace">
                 millions of users
@@ -85,13 +85,13 @@ export default function Home() {
               each month.
             </li>{" "}
             <li>
-              • 🖌️&nbsp; Developing a robust cross-platform{" "}
+              • 🖌️ Developing a robust cross-platform{" "}
               <strong>Design System</strong> across React, Ruby on Rails, and
               more (closed-source for now 😉).
             </li>{" "}
             <li>
-              • 👨‍💻&nbsp; Collaborating on <strong>Front-End Standards</strong>,
-              and scaling <strong>Technical Interviewing</strong> to grow our{" "}
+              • 👨‍💻 Collaborating on <strong>Front-End Standards</strong>, and
+              scaling <strong>Technical Interviewing</strong> to grow our{" "}
               <Link href="https://www.ramseyinhouse.com/">
                 in-house team of 140+ developers
               </Link>

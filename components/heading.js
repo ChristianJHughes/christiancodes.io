@@ -9,10 +9,11 @@ export default function Heading({ children, className, size, level }) {
       "text-3xl sm:text-6xl font-extrabold mb-8": size == "xl",
       "text-2xl font-semibold leading-snug md:leading-snug md:text-4xl mb-8":
         size == "lg",
-      "text-4xl mb-6 font-bold": size == "md",
-      "text-xl mb-2 font-bold": size == "sm",
-      "text-lg mb-3 font-bold": size == "xs",
+      "text-3xl md:text-4xl mb-8 font-bold": size == "md",
+      "text-xl mb-2.5 font-bold": size == "sm",
+      "text-lg mb-2 font-bold": size == "xs",
     },
+    "leading-snug",
     className
   );
   return <HeadingTag className={classes}>{children}</HeadingTag>;
