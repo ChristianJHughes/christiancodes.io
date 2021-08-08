@@ -15,7 +15,7 @@ function MyApp({ Component, pageProps }) {
           site_name: "Christian Codes",
           images: [
             {
-              url: "https://www.chrsitiancodes.io/og/christian-codes-og.png",
+              url: "https://www.christiancodes.io/og/christian-codes-og.png",
               width: 1200,
               height: 630,
               alt: "Christian Codes",
