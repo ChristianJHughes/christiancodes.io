@@ -95,7 +95,7 @@ export default function Header({ showBorder }) {
           <HeaderGroup>
             <SocialLink
               icon={IoLogoGithub}
-              href="https://www.github.com/ChristianJHughes"
+              href="https://github.com/ChristianJHughes"
               ariaLabel="GitHub"
             />
             <SocialLink
@@ -105,7 +105,7 @@ export default function Header({ showBorder }) {
             />
             <SocialLink
               icon={IoLogoTwitter}
-              href="https://www.twitter.com/codes_io"
+              href="https://twitter.com/codes_io"
               ariaLabel="Twitter"
             />
           </HeaderGroup>
