@@ -1,9 +1,9 @@
 import Image from "next/image";
-import Heading from "../components/heading";
-import Slice from "../components/slice";
-import Layout from "../components/layout";
-import Link from "../components/link";
-import christianHeadshot from "../public/images/christian-headshot.jpeg";
+import Heading from "components/heading";
+import Slice from "components/slice";
+import Layout from "components/layout";
+import Link from "components/link";
+import christianHeadshot from "public/images/christian-headshot.jpeg";
 
 export default function Home() {
   const meta = {

@@ -1,6 +1,6 @@
-import Heading from "../../components/heading";
-import Layout from "../../components/layout";
-import Slice from "../../components/slice";
+import Heading from "components/heading";
+import Layout from "components/layout";
+import Slice from "components/slice";
 import { NextSeo } from "next-seo";
 
 export default function Blog() {

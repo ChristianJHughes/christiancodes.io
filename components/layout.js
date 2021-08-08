@@ -1,5 +1,5 @@
-import Header from "./header";
-import Footer from "./footer";
+import Header from "components/header";
+import Footer from "components/footer";
 import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
 import { NextSeo } from "next-seo";

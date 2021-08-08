@@ -1,5 +1,5 @@
-import Logo from "./logo";
-import Link from "./link";
+import Logo from "components/logo";
+import Link from "components/link";
 import { IoLogoGithub } from "react-icons/io";
 
 export default function Footer() {
@@ -92,7 +92,7 @@ export default function Footer() {
           </Link>
           .
         </p>
-        <p className="flex-shrink-0 w-full text-sm font-normal text-center text-gray-400 dark:text-gray-400">
+        <p className="flex-shrink-0 w-full text-sm font-normal text-center text-gray-500 dark:text-gray-400">
           &copy; {todaysDate.getFullYear()} Christian Hughes.
         </p>
       </div>
