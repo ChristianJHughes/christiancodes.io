@@ -3,9 +3,15 @@ import Layout from "../components/layout";
 import Slice from "../components/slice";
 
 export default function Blog() {
+  const meta = {
+    title: "Blog | Christian Codes",
+    description:
+      "Hi, I'm Christian! Software Engineer, building developer tools and design systems in Nashville, TN.",
+  };
+
   return (
     <>
-      <Layout>
+      <Layout meta={meta}>
         <Slice size="lg" center>
           <Heading level={2}>Blog coming soon!</Heading>
         </Slice>

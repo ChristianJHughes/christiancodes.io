@@ -10,7 +10,7 @@ export default function Heading({ children, className, size, level }) {
       "text-2xl font-semibold leading-snug md:leading-snug md:text-4xl mb-8":
         size == "lg",
       "text-3xl md:text-4xl mb-8 font-bold": size == "md",
-      "text-xl mb-2 font-bold": size == "sm",
+      "text-xl mb-3 font-bold": size == "sm",
       "text-lg mb-2 font-bold": size == "xs",
     },
     "leading-snug",
