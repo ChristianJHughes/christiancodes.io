@@ -86,7 +86,11 @@ export default function Footer() {
           >
             <IoLogoGithub className="inline-block w-5 h-5 hover:text-blue-700 dark:hover:text-blue-400" />
           </a>
-          . Deployed on <Link href="https://vercel.com/">▲ Vercel</Link>.
+          . Deployed on{" "}
+          <Link href="https://vercel.com/" className="whitespace-nowrap">
+            ▲ Vercel
+          </Link>
+          .
         </p>
         <p className="flex-shrink-0 w-full text-sm font-normal text-center text-gray-400 dark:text-gray-400">
           &copy; {todaysDate.getFullYear()} Christian Hughes.

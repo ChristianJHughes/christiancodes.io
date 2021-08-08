@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Slice size="xl" center divider>
+        <Slice size="xl" className="pt-10 sm:pt-9" center divider>
           <div className="mb-8 overflow-hidden rounded-full w-36 h-36">
             <Image
               src={christianHeadshot}
@@ -105,15 +105,8 @@ export default function Home() {
             <Link href="https://www.gatsbyjs.org/">Gatsby</Link> is exceptional.
           </p>
           <p className="font-medium dark:text-gray-200">
-            Feel free to learn some more{" "}
-            <Link href="/about" className="font-semibold">
-              about me
-            </Link>
-            , or check out my{" "}
-            <Link href="/resume" className="font-semibold">
-              resume
-            </Link>
-            .
+            Feel free to learn some more <Link href="/about">about me</Link>, or
+            check out my <Link href="/resume">resume</Link>.
           </p>
         </Slice>
       </Layout>
