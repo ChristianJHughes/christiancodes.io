@@ -8,7 +8,10 @@ module.exports = {
     extend: {
       fontFamily: { sans: ["Inter", ...fontFamily.sans] },
       padding: ["focus"],
-      animation: { wave: "wave 1.5s linear both 1" },
+      animation: {
+        wave: "wave 1.5s linear both 1",
+        fadeDown: "fadeDown 0.3s linear",
+      },
       transitionProperty: {
         backgroundColor: "background-color",
         borderColor: "border-color, background-color",
@@ -33,6 +36,10 @@ module.exports = {
             transform: "translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)",
           },
           "1100%": { transform: "none" },
+        },
+        fadeDown: {
+          from: { opacity: "0", transform: "translateY(-16px)" },
+          to: { opacity: "1", transform: "translateY(0px)" },
         },
       },
     },

@@ -1,15 +1,28 @@
 import cn from "classnames";
+import PropTypes from "prop-types";
 
-// This is dumb.
-export default function Heading({ children, className, isLarge, isLarger }) {
+export default function Heading({ children, className, size, level }) {
+  const HeadingTag = `h${level}`;
+
   const classes = cn(
     {
-      "text-4xl sm:text-6xl font-extrabold mb-8": isLarge,
-      "text-7xl sm:text-6xl font-extrabold mb-8": isLarger,
-      "text-2xg mb-6": !isLarge,
+      "text-3xl sm:text-6xl font-extrabold mb-8": size == "xl",
+      "text-2xl font-semibold leading-snug md:leading-snug md:text-4xl mb-8":
+        size == "lg",
+      "text-4xl mb-6 font-bold": size == "md",
+      "text-xl mb-2 font-bold": size == "sm",
+      "text-lg mb-3 font-bold": size == "xs",
     },
-    "flex items-center justify-center",
     className
   );
-  return <h1 className={classes}>{children}</h1>;
+  return <HeadingTag className={classes}>{children}</HeadingTag>;
 }
+
+Heading.propTypes = {
+  size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl"]),
+  level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
+};
+
+Heading.defaultProps = {
+  size: "md",
+};
