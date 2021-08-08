@@ -1,4 +1,6 @@
 import Header from "./header";
+import Footer from "./footer";
+import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
 
 export default function Layout({ children }) {
@@ -8,12 +10,12 @@ export default function Layout({ children }) {
     <>
       <div className="absolute h-[1px] sm:h-14 sm:static" ref={ref}></div>
       <Header showBorder={entry && !inView} />
-      <main
-        id="main"
-        className="flex flex-col items-center justify-center max-w-screen-lg py-12 m-auto space-y-6 text-center"
-      >
-        {children}
-      </main>
+      <main id="main">{children}</main>
+      <Footer />
     </>
   );
 }
+
+Layout.propTypes = {
+  children: PropTypes.node,
+};
