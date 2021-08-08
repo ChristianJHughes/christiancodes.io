@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
 
       <Layout>
-        <Slice size="lg" center divider>
+        <Slice size="xl" center divider>
           <div className="mb-8 overflow-hidden rounded-full w-36 h-36">
             <Image
               src={christianHeadshot}
@@ -50,7 +50,7 @@ export default function Home() {
           </p>
         </Slice>
 
-        <Slice size="lg" divider>
+        <Slice size="xl" divider>
           <Heading level={3} size="md">
             🤓 Recently Published
           </Heading>
@@ -68,7 +68,7 @@ export default function Home() {
           </p>
         </Slice>
 
-        <Slice size="lg" divider>
+        <Slice size="xl" divider>
           <Heading level={3} size="md">
             💻 What I&apos;m Working On
           </Heading>

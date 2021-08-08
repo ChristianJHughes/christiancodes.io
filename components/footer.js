@@ -15,7 +15,7 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="px-6 py-12">
+    <footer className="px-6 pt-16 pb-12">
       <div className="flex flex-col flex-wrap items-center justify-between max-w-4xl mx-auto sm:items-start sm:flex-row">
         <div className="mb-8 sm:mb-0">
           <Logo className="mb-3" />

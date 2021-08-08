@@ -7,6 +7,7 @@ export default function Slice({ center, size, className, children, divider }) {
       "py-0": size == "sm",
       "py-4": size == "md",
       "py-8": size == "lg",
+      "py-12": size == "xl",
       "items-center text-center": center,
       "border-b-2 border-gray-700": divider,
     },
@@ -17,7 +18,7 @@ export default function Slice({ center, size, className, children, divider }) {
 }
 
 Slice.propTypes = {
-  size: PropTypes.oneOf(["sm", "md", "lg"]),
+  size: PropTypes.oneOf(["sm", "md", "lg", "xl"]),
   center: PropTypes.bool,
   divider: PropTypes.bool,
   size: PropTypes.bool,
