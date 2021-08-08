@@ -14,7 +14,7 @@ export default function Link({
 
   const classes = cn(
     {
-      "text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-500":
+      "text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-500 font-semibold":
         !subtle,
       "text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-gray-400":
         subtle,
