@@ -12,8 +12,10 @@ export default function Blog() {
   return (
     <>
       <Layout meta={meta}>
-        <Slice size="lg" center>
-          <Heading level={2}>Blog coming soon!</Heading>
+        <Slice size="xl" center>
+          <Heading level={1} size="lg">
+            Blog coming soon!
+          </Heading>
         </Slice>
       </Layout>
     </>

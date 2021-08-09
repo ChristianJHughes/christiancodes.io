@@ -1,8 +1,8 @@
-import Header from "components/header";
 import Footer from "components/footer";
+import Header from "components/header";
+import { NextSeo } from "next-seo";
 import PropTypes from "prop-types";
 import { useInView } from "react-intersection-observer";
-import { NextSeo } from "next-seo";
 
 export default function Layout({ children, meta }) {
   const { ref, inView, entry } = useInView();
@@ -13,6 +13,8 @@ export default function Layout({ children, meta }) {
         <NextSeo
           description={meta.description}
           title={meta.title}
+          noindex={meta.noIndex ? meta.noIndex : false}
+          nofollow={meta.noFollow ? meta.noFollow : false}
           openGraph={{
             description: meta.description,
             title: meta.title,

@@ -1,10 +1,10 @@
-import Logo from "./logo";
-import DarkModeToggle from "./dark-mode-toggle";
-import NextLink from "next/link";
+import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
 import cn from "classnames";
-import { useRouter } from "next/router";
-import { IoLogoLinkedin, IoLogoGithub, IoLogoTwitter } from "react-icons/io";
+import DarkModeToggle from "./dark-mode-toggle";
 import { Fade as Hamburger } from "hamburger-react";
+import Logo from "./logo";
+import NextLink from "next/link";
+import { useRouter } from "next/router";
 import { useState } from "react";
 
 function HeaderGroup({ children, isNav }) {

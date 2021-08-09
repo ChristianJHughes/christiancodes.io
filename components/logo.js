@@ -1,7 +1,7 @@
-import { TerminalIcon } from "@heroicons/react/outline";
-import Link from "next/link";
 import cn from "classnames";
+import Link from "next/link";
 import PropTypes from "prop-types";
+import { TerminalIcon } from "@heroicons/react/outline";
 
 export default function Logo({ className }) {
   return (

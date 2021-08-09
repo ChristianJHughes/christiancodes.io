@@ -1,6 +1,6 @@
-import Logo from "components/logo";
-import Link from "components/link";
 import { IoLogoGithub } from "react-icons/io";
+import Link from "components/link";
+import Logo from "components/logo";
 
 export default function Footer() {
   var todaysDate = new Date();

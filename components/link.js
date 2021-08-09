@@ -1,6 +1,6 @@
 import cn from "classnames";
-import PropTypes from "prop-types";
 import NextLink from "next/link";
+import PropTypes from "prop-types";
 
 export default function Link({
   ariaLabel,
