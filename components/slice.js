@@ -21,7 +21,7 @@ Slice.propTypes = {
   size: PropTypes.oneOf(["sm", "md", "lg", "xl"]),
   center: PropTypes.bool,
   divider: PropTypes.bool,
-  size: PropTypes.bool,
+  className: PropTypes.string,
   children: PropTypes.node,
 };
 

@@ -1,9 +1,9 @@
+import christianHeadshot from "public/images/christian-headshot.jpeg";
+import Heading from "components/heading";
 import Image from "next/image";
-import Heading from "../components/heading";
-import Slice from "../components/slice";
-import Layout from "../components/layout";
-import Link from "../components/link";
-import christianHeadshot from "../public/images/christian-headshot.jpeg";
+import Layout from "components/layout";
+import Link from "components/link";
+import Slice from "components/slice";
 
 export default function Home() {
   const meta = {
@@ -75,12 +75,12 @@ export default function Home() {
           <Heading level={2} size="md">
             💻 Work I&apos;m Doing
           </Heading>
-          <Heading level={3} size="sm" className="mb-4">
+          <Heading level={3} size="sm">
             <Link href="https://www.ramseysolutions.com/">
               @ Ramsey Solutions
             </Link>
           </Heading>
-          <ul className="flex flex-col gap-2 mb-6 font-medium leading-relaxed list-inside dark:text-gray-200">
+          <ul className="flex flex-col gap-2 mb-8 font-medium leading-relaxed list-inside dark:text-gray-200">
             <li>
               • 🧰 Building out front-end tooling for our{" "}
               <strong>CMS Platform</strong>, serving{" "}

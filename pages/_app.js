@@ -1,7 +1,7 @@
-import { ThemeProvider } from "next-themes";
+import "styles/globals.css";
 import { DefaultSeo } from "next-seo";
+import { ThemeProvider } from "next-themes";
 import { useRouter } from "next/router";
-import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
