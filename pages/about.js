@@ -20,7 +20,7 @@ export default function About() {
           <div className="prose dark:prose-light">
             <p>
               <span className="inline-block animate-wave">👋</span>
-              <strong> Hi, I'm Christian Hughes!</strong> I'm a{" "}
+              <strong> Hi, I&apos;m Christian Hughes!</strong> I&apos;m a{" "}
               <strong>Software Engineer</strong> with a passion for front-end
               development, developer tools, and design systems. I work as a{" "}
               <strong>
@@ -38,8 +38,8 @@ export default function About() {
             <p>
               I create front-end tools that enable{" "}
               <strong>hundreds of internal stakeholders</strong>, and{" "}
-              <strong>millions of users</strong>. Currently, I'm working hard to
-              expand our in-house design system and CMS platform!
+              <strong>millions of users</strong>. Currently, I&apos;m working
+              hard to expand our in-house design system and CMS platform!
             </p>{" "}
             <p>
               I previously worked as a{" "}
