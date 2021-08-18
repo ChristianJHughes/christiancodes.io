@@ -31,10 +31,10 @@ export default function Footer() {
             <ol className="flex flex-col gap-1">
               <li>
                 <Link
-                  isExternal
                   subtle
                   size="sm"
                   href="https://github.com/ChristianJHughes"
+                  newTab
                 >
                   Github
                 </Link>
@@ -44,17 +44,28 @@ export default function Footer() {
                   subtle
                   size="sm"
                   href="https://www.linkedin.com/in/christianjhughes/"
+                  newTab
                 >
                   LinkedIn
                 </Link>
               </li>
               <li>
-                <Link subtle size="sm" href="https://twitter.com/codes_io">
+                <Link
+                  subtle
+                  size="sm"
+                  href="https://twitter.com/codes_io"
+                  newTab
+                >
                   Twitter
                 </Link>
               </li>
               <li>
-                <Link subtle size="sm" href="mailto:christian.hughes@hey.com">
+                <Link
+                  subtle
+                  size="sm"
+                  href="mailto:christian.hughes@hey.com"
+                  newTab
+                >
                   Email
                 </Link>
               </li>
@@ -66,28 +77,53 @@ export default function Footer() {
             </h2>
             <ol className="flex flex-col gap-1">
               <li>
+                <Link subtle size="sm" href="/resume" newTab>
+                  Resume
+                </Link>
+              </li>
+              <li>
                 <Link
                   subtle
                   size="sm"
                   href="https://github.com/ChristianJHughes/devTools"
+                  newTab
                 >
                   Dev Tools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  subtle
+                  size="sm"
+                  href="https://github.com/ChristianJHughes/advent-of-code"
+                  newTab
+                >
+                  Advent of Code
                 </Link>
               </li>
             </ol>
           </div>
         </div>
         <p className="flex-shrink-0 w-full mb-2 text-sm font-semibold leading-relaxed text-center text-gray-800 dark:text-gray-200">
-          Built with <Link href="https://nextjs.org/">Next.js</Link> &amp;{" "}
-          <Link href="https://tailwindcss.com/">Tailwind</Link> on{" "}
+          Built with{" "}
+          <Link href="https://nextjs.org/" newTab>
+            Next.js
+          </Link>{" "}
+          &amp;{" "}
+          <Link href="https://tailwindcss.com/" newTab>
+            Tailwind
+          </Link>{" "}
+          on{" "}
           <a
             href="https://github.com/ChristianJHughes/christiancodes.io"
             aria-label="GitHub"
+            target="_blank"
+            rel="noreferrer"
           >
             <IoLogoGithub className="inline-block w-5 h-5 hover:text-blue-700 dark:hover:text-blue-400" />
           </a>
           . Deployed on{" "}
-          <Link href="https://vercel.com/" className="whitespace-nowrap">
+          <Link href="https://vercel.com/" className="whitespace-nowrap" newTab>
             ▲ Vercel
           </Link>
           .

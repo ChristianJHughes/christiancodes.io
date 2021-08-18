@@ -9,30 +9,44 @@ export default function Link({
   href,
   subtle,
   size,
+  newTab,
+  bold,
 }) {
   const isInternal = /^\/(?!\/)/.test(href);
 
   const classes = cn(
     {
-      "text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-500 font-semibold":
+      "text-blue-600 dark:text-blue-400 hover:text-blue-400 dark:hover:text-blue-500":
         !subtle,
       "text-gray-600 hover:text-black dark:text-gray-300 dark:hover:text-gray-400":
         subtle,
       "text-sm": size === "sm",
+      "font-semibold": !bold && !subtle,
+      "font-bold": bold,
     },
     className
   );
+
+  const newTabAttributes = newTab
+    ? { target: "_blank", rel: "noreferrer" }
+    : {};
+
   if (isInternal) {
     return (
       <NextLink href={href}>
-        <a className={classes} aria-label={ariaLabel}>
+        <a className={classes} aria-label={ariaLabel} {...newTabAttributes}>
           {children}
         </a>
       </NextLink>
     );
   }
   return (
-    <a href={href} className={classes} aria-label={ariaLabel}>
+    <a
+      href={href}
+      className={classes}
+      aria-label={ariaLabel}
+      {...newTabAttributes}
+    >
       {children}
     </a>
   );
