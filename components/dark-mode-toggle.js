@@ -1,15 +1,19 @@
 import { MoonIcon, SunIcon } from "@heroicons/react/outline";
+import { useEffect, useState } from "react";
 import { Switch } from "@headlessui/react";
 import { useTheme } from "next-themes";
 
 export default function DarkModeToggle() {
+  const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
+
+  useEffect(() => setMounted(true), []);
 
   return (
     <span className="flex items-center justify-center">
       <SunIcon className="w-3 h-3" />
       <Switch
-        checked={resolvedTheme == "dark"}
+        checked={mounted && resolvedTheme == "dark"}
         onChange={() => setTheme(resolvedTheme == "dark" ? "light" : "dark")}
         className="dark:bg-blue-600 bg-gray-200 relative inline-flex items-center h-5 rounded-full w-9 mx-1.5"
       >

@@ -24,7 +24,7 @@ function SocialLink({ href, icon, ariaLabel }) {
 
   return (
     <li>
-      <a href={href} aria-label={ariaLabel}>
+      <a href={href} aria-label={ariaLabel} target="_blank" rel="noreferrer">
         <Icon className="w-6 h-6 py-[2px] box-content dark:hover:text-blue-500 hover:text-blue-700" />
       </a>
     </li>

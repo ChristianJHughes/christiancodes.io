@@ -6,14 +6,15 @@ export default function Heading({ children, className, size, level }) {
 
   const classes = cn(
     {
-      "text-3xl sm:text-6xl font-extrabold mb-8": size == "xl",
+      "text-5xl sm:text-7xl font-extrabold mb-8 sm:leading-snug": size == "xxl",
+      "text-3xl sm:text-6xl font-extrabold mb-8 leading-tight sm:leading-tight":
+        size == "xl",
       "text-2xl font-semibold leading-snug md:leading-snug md:text-4xl mb-8":
         size == "lg",
-      "text-3xl md:text-4xl mb-8 font-bold": size == "md",
-      "text-xl mb-3 font-bold": size == "sm",
-      "text-lg mb-2 font-bold": size == "xs",
+      "text-3xl md:text-4xl mb-8 font-bold leading-snug": size == "md",
+      "text-xl mb-3 font-bold leading-snug": size == "sm",
+      "text-lg mb-2 font-bold leading-snug": size == "xs",
     },
-    "leading-snug",
     className
   );
   return <HeadingTag className={classes}>{children}</HeadingTag>;

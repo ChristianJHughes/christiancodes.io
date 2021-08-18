@@ -66,12 +66,26 @@ export default function Footer() {
             </h2>
             <ol className="flex flex-col gap-1">
               <li>
+                <Link subtle size="sm" href="/resume">
+                  Resume
+                </Link>
+              </li>
+              <li>
                 <Link
                   subtle
                   size="sm"
                   href="https://github.com/ChristianJHughes/devTools"
                 >
                   Dev Tools
+                </Link>
+              </li>
+              <li>
+                <Link
+                  subtle
+                  size="sm"
+                  href="https://github.com/ChristianJHughes/advent-of-code"
+                >
+                  Advent of Code
                 </Link>
               </li>
             </ol>
