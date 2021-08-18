@@ -34,11 +34,11 @@ export default function Home({ posts }) {
           <Heading className="max-w-2xl" level={2} size="lg">
             Software Engineer, building
             <br />{" "}
-            <span className="font-extrabold text-blue-800 dark:text-blue-200 whitespace-nowrap">
+            <span className="font-extrabold text-blue-700 dark:text-blue-200 whitespace-nowrap">
               Developer Tools
             </span>{" "}
             &{" "}
-            <span className="font-extrabold text-blue-800 whitespace-nowrap dark:text-blue-200">
+            <span className="font-extrabold text-blue-700 whitespace-nowrap dark:text-blue-200">
               Design Systems
             </span>
             .

@@ -64,7 +64,7 @@ export default function About() {
             <p>
               I love the web, and have a special interest in{" "}
               <strong>accessible cloud computing</strong>,{" "}
-              <strong>the JAMStack</strong>, and
+              <strong>the Jamstack</strong>, and
               <strong> ergonomic front-end frameworks</strong>.
             </p>
             <p>Outside of engineering, I really enjoy:</p>

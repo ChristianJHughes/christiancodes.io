@@ -20,12 +20,10 @@ export default function Custom404() {
           <Heading level={1} size="xl">
             😳 404 - Not Found
           </Heading>
-          <p className="max-w-lg mb-1 font-semibold text-gray-200">
+          <p className="max-w-lg mb-1 font-semibold">
             Whoops! Sorry, that route doesn&apos;t exist.
           </p>
-          <p className="max-w-lg mb-8 font-semibold text-gray-200">
-            Enjoy this gif instead.
-          </p>
+          <p className="max-w-lg mb-8 font-semibold">Enjoy this gif instead.</p>
           <Image src={mario404} alt="'Super Mario Bros' themed 404 message" />
         </Slice>
       </Layout>
