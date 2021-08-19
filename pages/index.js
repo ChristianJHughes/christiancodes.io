@@ -61,9 +61,7 @@ export default function Home({ posts }) {
             <PostPreview meta={postMeta} key={i} />
           ))}
 
-          <p className="dark:text-gray-200">
-            <em className="italic">👉 More blogs are on the way!</em>
-          </p>
+          <p className="dark:text-gray-200">👉 More blogs are on the way!</p>
         </Slice>
 
         <Slice size="xl" divider>
@@ -95,7 +93,7 @@ export default function Home({ posts }) {
               </li>{" "}
               <li>
                 👨‍💻 Collaborating on <strong>Front-End Standards</strong>, and
-                scaling <strong>Technical Interviewing</strong> to grow our{" "}
+                scaling Technical Interviewing to grow our{" "}
                 <Link href="https://www.ramseyinhouse.com/" newTab>
                   in-house team of 140+ developers
                 </Link>

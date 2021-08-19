@@ -28,7 +28,7 @@ export default function Blog() {
           <ArrowDownIcon className="w-6 mx-auto mb-16 -mt-1 text-gray-900 dark:text-gray-200" />
 
           <p className="text-center dark:text-gray-200">
-            <em className="italic">👉 More blogs are on the way!</em>
+            👉 More blogs are on the way!
           </p>
         </Slice>
       </Layout>
