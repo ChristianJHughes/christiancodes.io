@@ -37,7 +37,7 @@ export default function About() {
             </p>{" "}
             <p>
               I create front-end tools that enable{" "}
-              <strong>hundreds of internal stakeholders</strong>, and{" "}
+              <strong>hundreds of internal stakeholders</strong> and{" "}
               <strong>millions of users</strong>. Currently, I&apos;m working
               hard to expand our in-house design system and CMS platform!
             </p>{" "}
@@ -59,7 +59,7 @@ export default function About() {
                   Kansas State University
                 </Link>
               </strong>{" "}
-              (<em className="italic font-bold">Go Cats!</em>) back in 2017.
+              (go Cats!) back in 2017.
             </p>{" "}
             <p>
               I love the web, and have a special interest in{" "}
@@ -72,7 +72,7 @@ export default function About() {
               <li>Improv</li>
               <li>Running</li>
               <li>Keeping up with the Tech & Gaming industries</li>
-              <li>Growing in my Faith</li>
+              <li>Growing in my faith</li>
               <li>Bad movies</li>
             </ul>
             <p>
