@@ -21,7 +21,7 @@ export default function Heading({ children, className, size, level }) {
 }
 
 Heading.propTypes = {
-  size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl"]),
+  size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl", "xxl"]),
   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
 };
 
