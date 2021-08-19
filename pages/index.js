@@ -103,8 +103,8 @@ export default function Home({ posts }) {
               </li>
             </ul>
             <p>
-              Lately I&apos;ve been diving deep into the React ecosystem -- the
-              developer experience offered by frameworks like{" "}
+              Lately I&apos;ve been diving deep into the React ecosystem &mdash;
+              the developer experience offered by frameworks like{" "}
               <Link href="https://nextjs.org/" newTab>
                 Next.js
               </Link>{" "}

@@ -25,7 +25,7 @@ export default function Blog() {
           ))}
 
           <div className="flex w-0.5 h-[25vh] mx-auto mt-10 bg-gray-900 dark:bg-gray-200"></div>
-          <ArrowDownIcon className="w-8 mx-auto mb-16 -mt-1 text-gray-900 dark:text-gray-200" />
+          <ArrowDownIcon className="w-6 mx-auto mb-16 -mt-1 text-gray-900 dark:text-gray-200" />
 
           <p className="text-center dark:text-gray-200">
             <em className="italic">👉 More blogs are on the way!</em>
