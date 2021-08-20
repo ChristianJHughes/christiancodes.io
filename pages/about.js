@@ -7,7 +7,7 @@ export default function About() {
   const meta = {
     title: "About | Christian Codes",
     description:
-      "Hi, I'm Christian Hughes! Software Engineer, building developer tools and design systems in Nashville, TN.",
+      "Hi, I'm Christian Hughes! I'm a Software Engineer with a passion for front-end development, developer tools, and design systems.",
   };
 
   return (
@@ -30,7 +30,7 @@ export default function About() {
                 </Link>
               </strong>{" "}
               (
-              <Link href="https://ramseysolutions.com/" newTab>
+              <Link href="https://www.ramseysolutions.com/" newTab>
                 Ramsey Solutions
               </Link>
               ) in Nashville, TN.
@@ -55,7 +55,7 @@ export default function About() {
             <p>
               I earned a degree in <strong>Computer Science</strong> from{" "}
               <strong>
-                <Link href="https://ksu.edu" newTab>
+                <Link href="https://www.ksu.edu" newTab>
                   Kansas State University
                 </Link>
               </strong>{" "}

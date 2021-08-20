@@ -11,7 +11,7 @@ export default function Home({ posts }) {
   const meta = {
     title: "Christian Codes | Christian Hughes - Software Engineer",
     description:
-      "Hi, I'm Christian Hughes! Software Engineer, building developer tools and design systems in Nashville, TN.",
+      "Hi, I'm Christian Hughes! I'm a Software Engineer with a passion for front-end development, developer tools, and design systems.",
   };
 
   return (
