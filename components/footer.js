@@ -28,7 +28,7 @@ export default function Footer() {
             <h2 className="mb-1.5 text-sm font-semibold text-black dark:text-white">
               Get in Touch
             </h2>
-            <ol className="flex flex-col gap-1">
+            <ol className="flex flex-col gap-2 sm:gap-1">
               <li>
                 <Link
                   subtle
@@ -75,7 +75,7 @@ export default function Footer() {
             <h2 className="mb-1.5 text-sm font-semibold text-black dark:text-white">
               Other Stuff
             </h2>
-            <ol className="flex flex-col gap-1">
+            <ol className="flex flex-col gap-2 sm:gap-1">
               <li>
                 <Link subtle size="sm" href="/resume" newTab>
                   Resume

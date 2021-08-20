@@ -67,9 +67,9 @@ export default function Header({ showBorder }) {
   );
 
   const headerItemsClasses = cn(
-    "items-center justify-center w-full sm:w-auto mb-1 sm:mb-0 flex transition-opacity duration-300",
+    "items-center justify-center w-full sm:w-auto mb-1 sm:mb-0 flex transition-opacity transition-display duration-300",
     {
-      "opacity-0 sm:flex sm:opacity-100": !isOpen,
+      "opacity-0 sm:flex sm:opacity-100 z-[-1]": !isOpen,
       "opacity-100": isOpen,
     }
   );

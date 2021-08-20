@@ -18,7 +18,9 @@ export default function PostLayout({ children, meta }) {
       />
       <Layout>
         <Slice size="xl" divider>
-          <Heading size="xl">{meta.title}</Heading>
+          <Heading size="xl" level={1}>
+            {meta.title}
+          </Heading>
           <div className="prose dark:prose-light">{children}</div>
         </Slice>
       </Layout>
