@@ -1,4 +1,5 @@
 import cn from "classnames";
+import { handleResumeClick } from "../lib/gtag";
 import NextLink from "next/link";
 import PropTypes from "prop-types";
 
@@ -34,7 +35,12 @@ export default function Link({
   if (isInternal) {
     return (
       <NextLink href={href}>
-        <a className={classes} aria-label={ariaLabel} {...newTabAttributes}>
+        <a
+          className={classes}
+          onClick={href == "/resume" ? handleResumeClick : undefined}
+          aria-label={ariaLabel}
+          {...newTabAttributes}
+        >
           {children}
         </a>
       </NextLink>
