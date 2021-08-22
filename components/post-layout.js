@@ -55,9 +55,7 @@ export default function PostLayout({ children, meta }) {
             </div>
           )}
 
-          <div className="self-center prose-sm prose sm:prose dark:prose-light">
-            {children}
-          </div>
+          <div className="self-center prose dark:prose-light">{children}</div>
         </Slice>
       </Layout>
     </>
