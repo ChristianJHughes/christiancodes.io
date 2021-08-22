@@ -1,3 +1,4 @@
+import christianHeadshot from "public/images/christian-headshot.jpeg";
 import Heading from "components/heading";
 import Image from "next/image";
 import Layout from "components/layout";
@@ -5,7 +6,6 @@ import Link from "components/link";
 import { NextSeo } from "next-seo";
 import PropTypes from "prop-types";
 import Slice from "components/slice";
-import christianHeadshot from "public/images/christian-headshot.jpeg";
 
 export default function PostLayout({ children, meta }) {
   return (
