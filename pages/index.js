@@ -60,8 +60,6 @@ export default function Home({ posts }) {
           {getAllPosts().map((postMeta, i) => (
             <PostPreview meta={postMeta} key={i} />
           ))}
-
-          <p className="dark:text-gray-200">👉 More blogs are on the way!</p>
         </Slice>
 
         <Slice size="xl" divider>
