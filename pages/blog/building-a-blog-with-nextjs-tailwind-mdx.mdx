@@ -16,9 +16,11 @@ export default ({ children }) => (
   <PostLayout meta={meta}>{children}</PostLayout>
 );
 
-**There are an intimidating number of excellent front-end tools.**
+**There's an intimidating number of excellent front-end tools.**
 
 Today, there are about 10,000 reasonable approaches for building a blog, which can be daunting. Do I need a a Javascript framework, or is that too heavy-handed? How will I author and store my content? Where will I host it? How do I make it look good?
+
+Let's dive into my answers to these questions.
 
 ## Choosing a Stack
 
@@ -32,13 +34,13 @@ Want an example? Check out the [source code](https://github.com/ChristianJHughes
 
 ## Why Next.js?
 
-[Next.js](https://nextjs.org/) calls itself **'The React Framework for Production'**, and for good reason.
+[Next.js](https://nextjs.org/) calls itself **"The React Framework for Production,"** and for good reason.
 
-The [React](https://reactjs.org/) ecosystem is flourishing right now. The library has grown tremendously in the (8!) years since it was initially released, as has the community surrounding it.
+The [React](https://reactjs.org/) ecosystem is flourishing right now. The library has grown tremendously in the eight (!) years since it was initially released, as has the community surrounding it.
 
 There are so many mature, battle-tested React-based tools on offer. I want to leverage the benefits of that ecosystem. There is no shortage of component-based Javascript frameworks, but React remains the most established.
 
-One could argue that React (or any Javascript framework, for that matter) is too heavy-handed for a simple blog. That perhaps it's overkill. I would argue that the tools and optimizations are so good now, that there's little reason not to lean on a framework.
+One could argue that React (or any Javascript framework, for that matter) is too heavy-handed for a simple blog. I would argue that the tools and optimizations are so good now, that there's little reason not to lean on a framework.
 
 Let's talk about that.
 
@@ -53,7 +55,7 @@ Next.js provides a suite of features & conventions around React that greatly sim
 - Dead simple serverless API creation
 - ...[and more](https://nextjs.org/#features)!
 
-Our of the box, React doesn't have an opinion on how your application is structured. Next.js provides **sensible defaults** that get you out of the business of making decisions about boilerplate. I've written a lot of custom Webpack configs, and it's rarely how I'd like to be spending my time.
+Out of the box, React doesn't have an opinion on how your application is structured. Next.js provides **sensible defaults** that get you out of the business of making decisions about boilerplate. I've written a lot of custom Webpack configs, and it's rarely how I'd like to be spending my time.
 
 Next.js's biggest competitive advantage, in my view, is the way that it approaches server-side rendering. To begin with, every page is pre-rendered. This means that the markup for each page is generated _before_ it ever gets to the user's browser. There's no waiting for React to load and construct the DOM from scratch.
 
@@ -87,7 +89,7 @@ The major advantage of Next.js over Create React App is pre-rendering. Create Re
 
 ## Why Tailwind?
 
-[Tailwind CSS](https://tailwindcss.com/) is a [utility-first](https://tailwindcss.com/docs/utility-first) CSS framework moves all styling decisions directly into your markup.
+[Tailwind CSS](https://tailwindcss.com/) is a [utility-first](https://tailwindcss.com/docs/utility-first) CSS framework that moves all styling decisions directly into your markup.
 
 Instead of writing rules like `display: flex;` and `border-radius: 4px`, Tailwind exposes utility classes like `flex` and `rounded`.
 
@@ -101,17 +103,17 @@ At first, the extra clutter and mental overhead of utility classes seemed like a
 
 In reality, being able to spend all of my time in the markup (`JSX`) feels really intuitive.
 
-This whole website has essentially 0 custom CSS. There's No need to worry about how to scope or architect the CSS. There's no need to worry about the potential runtime overhead of a CSS-in-JS solution.
+This whole website has essentially **zero custom CSS**. There's no need to worry about how to scope or architect the CSS. There's no need to worry about the potential runtime overhead of a CSS-in-JS solution.
 
 Everything is a utility class, and making tweaks is dead simple.
 
 ## Why MDX?
 
-[MDX](https://mdxjs.com/) allows you import **React components directly in Markdown files.**
+[MDX](https://mdxjs.com/) allows you import **React components directly inside of Markdown files.**
 
 This is a total game changer.
 
-Markdown is by far and away my favorite way to author blog posts and documentation &mdash; it's portable, largely standardized, and is a natural fit for Git workflows. But on its own, it's cumbersome to include rich or interactive markup.
+Markdown is by far my favorite way to author blog posts and documentation &mdash; it's portable, largely standardized, and a natural fit for Git workflows. But on its own, it's cumbersome to include rich or interactive markup.
 
 MDX combines the ease of writing Markdown with the flexibility of custom React components.
 
@@ -127,7 +129,7 @@ The official [`@next/mdx`](https://mdxjs.com/getting-started/next) plugin is the
 
 This plugin does have some constraints. Because it treats each MDX file as a normal Javascript module, it can introduce [issues with memory utilization](https://github.com/hashicorp/next-mdx-remote#background--theory) at scale. It also requires that files be located in the `/pages` directory &mdash; it's not possible to source the data from anywhere else.
 
-Two libraries, [`@next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) and [`@mdx-bundler`](https://github.com/kentcdodds/mdx-bundler) may serve as good alternatives if these constraints are an issue.
+Two libraries, [`@next-mdx-remote`](https://github.com/hashicorp/next-mdx-remote) and [`@mdx-bundler`](https://github.com/kentcdodds/mdx-bundler), may serve as good alternatives if these constraints are an issue.
 
 ## Hosting
 
@@ -143,7 +145,7 @@ Next.js can be deployed on Vercel with no configuration, and the platform automa
 
 [AWS Amplify](https://aws.amazon.com/amplify/), while quite functional, is notably behind both Vercel and Netlify in terms of developer experience.
 
-## Conclusion
+## Wrapping Up
 
 I'm really happy with the Next.js, Tailwind, & MDX stack. If you're working on a project in this space and I can be of assistance, please feel free to [reach out](mailto:christian.hughes@hey.com)!
 
