@@ -79,7 +79,7 @@ module.exports = {
                 },
               },
               strong: {
-                color: theme("colors.white"),
+                color: theme("colors.gray.100"),
               },
               "ol > li::before": {
                 color: theme("colors.gray.400"),
