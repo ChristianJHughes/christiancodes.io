@@ -31,11 +31,11 @@ export default function PostLayout({ children, meta }) {
           </Heading>
 
           <div className="flex items-center mb-6 -mt-4">
-            <div className="inline-block w-8 h-8 mr-2 overflow-hidden rounded-full">
+            <div className="inline-block mr-2 overflow-hidden rounded-full w-7 h-7">
               <Image
                 src={christianHeadshot}
-                width={32}
-                height={32}
+                width={28}
+                height={28}
                 alt="Christian Hughes Headshot"
               ></Image>
             </div>
