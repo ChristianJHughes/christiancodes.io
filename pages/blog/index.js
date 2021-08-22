@@ -24,7 +24,7 @@ export default function Blog() {
             <PostPreview meta={postMeta} key={i} />
           ))}
 
-          <div className="flex w-0.5 h-[25vh] mx-auto mt-10 bg-gray-900 dark:bg-gray-200"></div>
+          <div className="flex w-0.5 h-[25vh] mx-auto mt-16 bg-gray-900 dark:bg-gray-200"></div>
           <ArrowDownIcon className="w-6 mx-auto mb-16 -mt-1 text-gray-900 dark:text-gray-200" />
 
           <p className="text-center dark:text-gray-200">

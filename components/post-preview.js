@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 
 export default function PostPreview({ meta }) {
   return (
-    <div className="mb-6">
+    <div>
       <Heading level={3} size="sm">
         <Link href={`/blog/${meta.slug}`}>{meta.title}</Link>
       </Heading>
