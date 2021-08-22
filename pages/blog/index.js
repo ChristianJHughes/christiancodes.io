@@ -15,7 +15,7 @@ export default function Blog() {
   return (
     <>
       <Layout meta={meta}>
-        <Slice size="xl" divider>
+        <Slice size="xl" className="-mt-6 sm:-mt-0" divider>
           <Heading level={1} size="xxl">
             Blog
           </Heading>

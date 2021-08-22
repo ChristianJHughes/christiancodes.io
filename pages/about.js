@@ -13,7 +13,7 @@ export default function About() {
   return (
     <>
       <Layout meta={meta}>
-        <Slice size="xl" divider>
+        <Slice size="xl" className="-mt-6 sm:-mt-0" divider>
           <Heading level={1} size="xxl">
             About
           </Heading>
