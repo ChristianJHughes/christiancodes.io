@@ -44,11 +44,7 @@ export default function Home({ posts }) {
             .
           </Heading>
           <p className="self-center max-w-md mx-auto font-semibold text-gray-700 text-md sm:text-lg dark:text-gray-200">
-            You&apos;ll find me working on the web at{" "}
-            <Link href="https://www.ramseysolutions.com/" newTab>
-              Ramsey Solutions
-            </Link>{" "}
-            in beautiful Nashville, TN.
+            You&apos;l find me working on the web in beautiful Nashville, TN.
           </p>
         </Slice>
 
@@ -64,7 +60,7 @@ export default function Home({ posts }) {
 
         <Slice size="xl" divider>
           <Heading level={2} size="md">
-            💻 Work I&apos;m Doing
+            💻 Recent Work
           </Heading>
           <Heading level={3} size="sm">
             <Link href="https://www.ramseysolutions.com/" newTab>
@@ -74,7 +70,7 @@ export default function Home({ posts }) {
           <div className="prose dark:prose-light">
             <ul>
               <li>
-                🧰 Building out front-end tooling for our{" "}
+                🧰 Built out front-end tooling for the{" "}
                 <strong>CMS Platform</strong>, serving{" "}
                 <Link
                   href="https://www.ramseysolutions.com/ramseyplus/financial-peace"
@@ -85,13 +81,13 @@ export default function Home({ posts }) {
                 each month.
               </li>{" "}
               <li>
-                🖌️ Developing a robust cross-platform{" "}
+                🖌️ Developed architecture for robust cross-platform{" "}
                 <strong>Design System</strong> across React, Ruby on Rails, and
                 more (closed-source for now 😉).
               </li>{" "}
               <li>
-                👨‍💻 Collaborating on <strong>Front-End Standards</strong>, and
-                scaling Technical Interviewing to grow our{" "}
+                👨‍💻 Collaborated on <strong>Front-End Standards</strong>, and
+                scaled Technical Interviewing to grow the{" "}
                 <Link href="https://www.ramseyinhouse.com/" newTab>
                   in-house team of 140+ developers
                 </Link>

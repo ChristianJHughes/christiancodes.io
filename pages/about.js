@@ -22,9 +22,17 @@ export default function About() {
               <span className="inline-block animate-wave">👋</span>
               <strong> Hi, I&apos;m Christian Hughes!</strong> I&apos;m a{" "}
               <strong>Software Engineer</strong> with a passion for front-end
-              development, developer tools, and design systems. I work as a{" "}
+              development, developer tools, and design systems.
+            </p>{" "}
+            <p>
+              I create front-end tools that enable{" "}
+              <strong>hundreds of developers</strong> and{" "}
+              <strong>millions of users</strong>.
+            </p>{" "}
+            <p>
+              {" "}
+              I&apos;ve recently worked as a <strong>Developer</strong> for{" "}
               <strong>
-                Developer for{" "}
                 <Link href="https://twitter.com/DaveRamsey" newTab>
                   Dave Ramsey
                 </Link>
@@ -33,14 +41,9 @@ export default function About() {
               <Link href="https://www.ramseysolutions.com/" newTab>
                 Ramsey Solutions
               </Link>
-              ) in Nashville, TN.
-            </p>{" "}
-            <p>
-              I create front-end tools that enable{" "}
-              <strong>hundreds of internal stakeholders</strong> and{" "}
-              <strong>millions of users</strong>. Currently, I&apos;m working
-              hard to expand our in-house design system and CMS platform!
-            </p>{" "}
+              ), designing key architecture and tooling for the Design Systems
+              and CMS platforms.
+            </p>
             <p>
               I previously worked as a{" "}
               <strong>Software Development Engineer</strong> at{" "}
