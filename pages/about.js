@@ -25,10 +25,19 @@ export default function About() {
               development, developer tools, and design systems.
             </p>{" "}
             <p>
-              I create front-end tools that enable{" "}
+              I create front-end tools that have enabled{" "}
               <strong>hundreds of developers</strong> and{" "}
               <strong>millions of users</strong>.
             </p>{" "}
+            <p>
+              I currently work as a <strong>Software Engineer</strong> at{" "}
+              <strong>
+                <Link href="https://www.dropbox.com/" newTab>
+                  Dropbox
+                </Link>
+                .
+              </strong>
+            </p>
             <p>
               {" "}
               I&apos;ve recently worked as a <strong>Developer</strong> for{" "}

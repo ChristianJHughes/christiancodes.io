@@ -44,7 +44,11 @@ export default function Home({ posts }) {
             .
           </Heading>
           <p className="self-center max-w-md mx-auto font-semibold text-gray-700 text-md sm:text-lg dark:text-gray-200">
-            You&apos;l find me working on the web in beautiful Nashville, TN.
+            You&apos;l find me working on the web at{" "}
+            <Link href="https://www.dropbox.com/" newTab>
+              Dropbox
+            </Link>{" "}
+            in beautiful Nashville, TN.
           </p>
         </Slice>
 
@@ -62,6 +66,18 @@ export default function Home({ posts }) {
           <Heading level={2} size="md">
             💻 Recent Work
           </Heading>
+          <Heading level={3} size="sm">
+            <Link href="https://www.dropbox.com/" newTab>
+              @ Dropbox
+            </Link>
+          </Heading>
+          <div className="mb-4 prose dark:prose-light">
+            <ul>
+              <li>
+                Stay tuned, I&apos;m excited to share what I&apos;m working on!
+              </li>
+            </ul>
+          </div>
           <Heading level={3} size="sm">
             <Link href="https://www.ramseysolutions.com/" newTab>
               @ Ramsey Solutions
