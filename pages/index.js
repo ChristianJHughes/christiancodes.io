@@ -44,7 +44,7 @@ export default function Home({ posts }) {
             .
           </Heading>
           <p className="self-center max-w-md mx-auto font-semibold text-gray-700 text-md sm:text-lg dark:text-gray-200">
-            You&apos;l find me working on the web at{" "}
+            You&apos;ll find me working on the web at{" "}
             <Link href="https://www.dropbox.com/" newTab>
               Dropbox
             </Link>{" "}
