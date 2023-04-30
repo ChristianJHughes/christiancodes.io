@@ -21,8 +21,8 @@ export default function About() {
             <p>
               <span className="inline-block animate-wave">👋</span>
               <strong> Hi, I&apos;m Christian Hughes!</strong> I&apos;m a{" "}
-              <strong>Software Engineer</strong> with a passion for front-end
-              development, developer tools, and design systems.
+              <strong>Senior Software Engineer</strong> with a passion for
+              front-end development, developer tools, and design systems.
             </p>{" "}
             <p>
               I create front-end tools that have enabled{" "}
@@ -30,7 +30,7 @@ export default function About() {
               <strong>millions of users</strong>.
             </p>{" "}
             <p>
-              I currently work as a <strong>Software Engineer</strong> at{" "}
+              I currently work as a <strong>Senior Software Engineer</strong> at{" "}
               <strong>
                 <Link href="https://www.dropbox.com/" newTab>
                   Dropbox
@@ -40,7 +40,9 @@ export default function About() {
             </p>
             <p>
               {" "}
-              I&apos;ve recently worked as a <strong>Developer</strong> for{" "}
+              I&apos;ve recently worked as a <strong>
+                Developer III
+              </strong> for{" "}
               <strong>
                 <Link href="https://twitter.com/DaveRamsey" newTab>
                   Dave Ramsey
@@ -71,7 +73,7 @@ export default function About() {
                   Kansas State University
                 </Link>
               </strong>{" "}
-              (go Cats!) back in 2017.
+              in 2017.
             </p>{" "}
             <p>
               I love the web, and have a special interest in{" "}
@@ -82,9 +84,8 @@ export default function About() {
             <p>Outside of engineering, I really enjoy:</p>
             <ul>
               <li>Improv</li>
-              <li>Running</li>
-              <li>Keeping up with the Tech & Gaming industries</li>
-              <li>Growing in my faith</li>
+              <li>Theology</li>
+              <li>Exercise</li>
               <li>Bad movies</li>
             </ul>
             <p>

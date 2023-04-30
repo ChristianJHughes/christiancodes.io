@@ -31,15 +31,11 @@ export default function Home({ posts }) {
             <span className="inline-block duration-1000 animate-wave">👋</span>{" "}
             Hi, I&apos;m Christian!
           </Heading>
-          <Heading className="max-w-2xl" level={2} size="lg">
-            Software Engineer, building
+          <Heading className="max-w-3xl" level={2} size="lg">
+            Senior Software Engineer,
             <br />{" "}
-            <span className="font-extrabold text-blue-700 dark:text-blue-200 whitespace-nowrap">
-              Developer Tools
-            </span>{" "}
-            &{" "}
-            <span className="font-extrabold text-blue-700 whitespace-nowrap dark:text-blue-200">
-              Design Systems
+            <span className="font-extrabold text-blue-700 dark:text-blue-200">
+              building products for millions of users
             </span>
             .
           </Heading>
@@ -54,16 +50,6 @@ export default function Home({ posts }) {
 
         <Slice size="xl" divider>
           <Heading level={2} size="md">
-            🤓 Recently Published
-          </Heading>
-
-          {getAllPosts().map((postMeta, i) => (
-            <PostPreview meta={postMeta} key={i} />
-          ))}
-        </Slice>
-
-        <Slice size="xl" divider>
-          <Heading level={2} size="md">
             💻 Recent Work
           </Heading>
           <Heading level={3} size="sm">
@@ -74,59 +60,29 @@ export default function Home({ posts }) {
           <div className="mb-4 prose dark:prose-light">
             <ul>
               <li>
-                Stay tuned, I&apos;m excited to share what I&apos;m working on!
+                🚀 Led engineering for web onboarding redesign, driving $3.5MM+
+                in new annual revenue
+              </li>
+              <li>
+                🖥️ Built personalized sign-up experiences across the Dropbox web
+                & desktop apps, serving millions of users in 20+ locales
+              </li>
+              <li>
+                🧪 Designed many feature experiments in partnership with product
+                & data science
               </li>
             </ul>
           </div>
-          <Heading level={3} size="sm">
-            <Link href="https://www.ramseysolutions.com/" newTab>
-              @ Ramsey Solutions
-            </Link>
+        </Slice>
+
+        <Slice size="xl" divider>
+          <Heading level={2} size="md">
+            🤓 Recently Published
           </Heading>
-          <div className="prose dark:prose-light">
-            <ul>
-              <li>
-                🧰 Built out front-end tooling for the{" "}
-                <strong>CMS Platform</strong>, serving{" "}
-                <Link
-                  href="https://www.ramseysolutions.com/ramseyplus/financial-peace"
-                  newTab
-                >
-                  millions of users
-                </Link>{" "}
-                each month.
-              </li>{" "}
-              <li>
-                🖌️ Developed architecture for robust cross-platform{" "}
-                <strong>Design System</strong> across React, Ruby on Rails, and
-                more (closed-source for now 😉).
-              </li>{" "}
-              <li>
-                👨‍💻 Collaborated on <strong>Front-End Standards</strong>, and
-                scaled Technical Interviewing to grow the{" "}
-                <Link href="https://www.ramseyinhouse.com/" newTab>
-                  in-house team of 140+ developers
-                </Link>
-                .
-              </li>
-            </ul>
-            <p>
-              Lately I&apos;ve been diving deep into the React ecosystem &mdash;
-              the developer experience offered by frameworks like{" "}
-              <Link href="https://nextjs.org/" newTab>
-                Next.js
-              </Link>{" "}
-              and{" "}
-              <Link href="https://www.gatsbyjs.com/" newTab>
-                Gatsby
-              </Link>{" "}
-              is exceptional.
-            </p>
-            <p>
-              Feel free to learn some more <Link href="/about">about me</Link>,
-              or check out my <Link href="/resume">resume</Link>.
-            </p>
-          </div>
+
+          {getAllPosts().map((postMeta, i) => (
+            <PostPreview meta={postMeta} key={i} />
+          ))}
         </Slice>
       </Layout>
     </>

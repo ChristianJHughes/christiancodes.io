@@ -129,7 +129,7 @@ export default function Footer() {
           .
         </p>
         <p className="flex-shrink-0 w-full text-sm font-normal text-center text-gray-500 dark:text-gray-400">
-          &copy; {todaysDate.getFullYear()} Christian Hughes.
+          &copy; {todaysDate.getFullYear()} Christian Hughes
         </p>
       </div>
     </footer>

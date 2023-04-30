@@ -9,7 +9,7 @@ module.exports = withMDX({
     return [
       {
         source: "/resume",
-        destination: "/resume-christian-hughes-2021.pdf",
+        destination: "/christian-hughes-resume.pdf",
       },
     ];
   },

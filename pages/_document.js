@@ -1,4 +1,5 @@
 import Document, { Head, Html, Main, NextScript } from "next/document";
+import Script from "next/script";
 
 class MyDocument extends Document {
   render() {
@@ -37,24 +38,21 @@ class MyDocument extends Document {
           <meta name="msapplication-TileColor" content="#da532c" />
           <meta name="theme-color" content="#ffffff" />
           {/* Global site tag (gtag.js) - Google Analytics */}
-          <script
+          <Script
             async
             src="https://www.googletagmanager.com/gtag/js?id=G-2FPY3JZ5WH"
-          ></script>
-
-          <script
-            dangerouslySetInnerHTML={{
-              __html: `
-            window.dataLayer = window.dataLayer || [];
-            function gtag() {dataLayer.push(arguments)};
-            gtag('js', new Date());
-
-            gtag('config', 'G-2FPY3JZ5WH', {
-              page_path: window.location.pathname,
-            });
-          `,
-            }}
           />
+          <Script id="google-analytics" strategy="afterInteractive">
+            {`
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){window.dataLayer.push(arguments);}
+              gtag('js', new Date());
+
+              gtag('config', 'G-2FPY3JZ5WH', {
+                  page_path: window.location.pathname,
+                });
+            `}
+          </Script>
         </Head>
         <body className="text-black duration-300 bg-white transition-backgroundColor dark:text-white dark:bg-gray-900 lg:px-0">
           <a
