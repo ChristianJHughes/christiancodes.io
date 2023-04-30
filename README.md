@@ -7,7 +7,7 @@ Hosted on **[▲ Vercel](https://vercel.com/)**.
 
 ## Getting Started
 
-Running the project quick and easy! [Node.js `16.x`](https://nodejs.org/en/) is required.
+Running the project quick and easy! [Node.js `18.x`](https://nodejs.org/en/) is required.
 
 1. Clone the repository:
 
