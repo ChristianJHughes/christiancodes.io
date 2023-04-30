@@ -34,16 +34,16 @@ export default function Link({
 
   if (isInternal) {
     return (
-      <NextLink href={href}>
-        <a
-          className={classes}
-          onClick={href == "/resume" ? handleResumeClick : undefined}
-          aria-label={ariaLabel}
-          {...newTabAttributes}
-        >
-          {children}
-        </a>
-      </NextLink>
+      (<NextLink
+        href={href}
+        className={classes}
+        onClick={href == "/resume" ? handleResumeClick : undefined}
+        aria-label={ariaLabel}
+        {...newTabAttributes}>
+
+        {children}
+
+      </NextLink>)
     );
   }
   return (

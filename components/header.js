@@ -45,8 +45,8 @@ function NavigationLink({ href, text }) {
 
   return (
     <li>
-      <NextLink href={href}>
-        <a className={navigationLinkClasses}>{text}</a>
+      <NextLink href={href} className={navigationLinkClasses}>
+        {text}
       </NextLink>
     </li>
   );
