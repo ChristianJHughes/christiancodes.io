@@ -39,18 +39,16 @@ class MyDocument extends Document {
           <meta name="theme-color" content="#ffffff" />
           {/* Global site tag (gtag.js) - Google Analytics */}
           <Script
-            async
+            strategy="afterInteractive"
             src="https://www.googletagmanager.com/gtag/js?id=G-2FPY3JZ5WH"
           />
           <Script id="google-analytics" strategy="afterInteractive">
             {`
               window.dataLayer = window.dataLayer || [];
-              function gtag(){window.dataLayer.push(arguments);}
+              function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
 
-              gtag('config', 'G-2FPY3JZ5WH', {
-                  page_path: window.location.pathname,
-                });
+              gtag('config', 'G-2FPY3JZ5WH');
             `}
           </Script>
         </Head>
