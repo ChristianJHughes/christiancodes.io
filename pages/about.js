@@ -30,7 +30,7 @@ export default function About() {
               <strong>millions of users</strong>.
             </p>{" "}
             <p>
-              I currently work as a <strong>Senior Software Engineer</strong> at{" "}
+              I&apos;ve most recently worked as a <strong>Senior Software Engineer</strong> at{" "}
               <strong>
                 <Link href="https://www.dropbox.com/" newTab>
                   Dropbox
@@ -40,7 +40,7 @@ export default function About() {
             </p>
             <p>
               {" "}
-              I&apos;ve recently worked as a <strong>
+              I previously worked as a <strong>
                 Developer III
               </strong> for{" "}
               <strong>
@@ -56,7 +56,7 @@ export default function About() {
               and CMS platforms.
             </p>
             <p>
-              I previously worked as a{" "}
+              I also worked as a{" "}
               <strong>Software Development Engineer</strong> at{" "}
               <strong>
                 <Link href="https://www.amazon.com" newTab>
