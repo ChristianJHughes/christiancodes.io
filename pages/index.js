@@ -56,16 +56,14 @@ export default function Home({ posts }) {
           <div className="mb-4 prose dark:prose-light">
             <ul>
               <li>
-                🚀 Led engineering for web onboarding redesign, driving $3.5MM+
-                in new annual revenue
+                🚀 Led web onboarding redesign, driving $3.5M+ in new annual revenue
               </li>
               <li>
-                🖥️ Built personalized sign-up experiences across the Dropbox web
-                & desktop apps, serving millions of users in 20+ locales
+                🖥️ Built personalized sign-up flows across the Dropbox web and desktop apps, serving
+millions of users in 20+ locales
               </li>
               <li>
-                🧪 Designed many feature experiments in partnership with product
-                & data science
+                🧪 Led feature experimentation roadmap in collaboration with Product and Data Science
               </li>
             </ul>
           </div>
