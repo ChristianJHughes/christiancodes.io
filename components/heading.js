@@ -1,7 +1,7 @@
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-export default function Heading({ children, className, size, level }) {
+export default function Heading({ children, className, size = "md", level }) {
   const HeadingTag = `h${level}`;
 
   const classes = cn(
@@ -15,7 +15,7 @@ export default function Heading({ children, className, size, level }) {
       "text-xl mb-3 font-bold leading-snug": size == "sm",
       "text-lg mb-2 font-bold leading-snug": size == "xs",
     },
-    className
+    className,
   );
   return <HeadingTag className={classes}>{children}</HeadingTag>;
 }
@@ -23,8 +23,4 @@ export default function Heading({ children, className, size, level }) {
 Heading.propTypes = {
   size: PropTypes.oneOf(["xs", "sm", "md", "lg", "xl", "xxl"]),
   level: PropTypes.oneOf([1, 2, 3, 4, 5, 6]).isRequired,
-};
-
-Heading.defaultProps = {
-  size: "md",
 };

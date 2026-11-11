@@ -1,7 +1,13 @@
 import cn from "classnames";
 import PropTypes from "prop-types";
 
-export default function Slice({ center, size, className, children, divider }) {
+export default function Slice({
+  center = false,
+  size = "sm",
+  className,
+  children,
+  divider = false,
+}) {
   const classes = cn(
     {
       "py-0": size == "sm",
@@ -12,7 +18,7 @@ export default function Slice({ center, size, className, children, divider }) {
       "border-b-2 border-gray-400 dark:border-gray-700": divider,
     },
     "mx-5 px-3 md:mx-auto md:px-5 flex flex-col max-w-3xl",
-    className
+    className,
   );
   return <div className={classes}>{children}</div>;
 }
@@ -23,10 +29,4 @@ Slice.propTypes = {
   divider: PropTypes.bool,
   className: PropTypes.string,
   children: PropTypes.node,
-};
-
-Slice.defaultProps = {
-  size: "sm",
-  center: false,
-  divider: false,
 };

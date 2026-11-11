@@ -1,29 +1,32 @@
 import christianHeadshot from "public/images/christian-headshot.jpeg";
+import { generateNextSeo } from "next-seo/pages";
+import Head from "next/head";
 import Heading from "components/heading";
 import Image from "next/image";
 import Layout from "components/layout";
 import Link from "components/link";
-import { NextSeo } from "next-seo";
 import PropTypes from "prop-types";
 import Slice from "components/slice";
 
 export default function PostLayout({ children, meta }) {
   return (
     <>
-      <NextSeo
-        description={meta.description}
-        title={meta.title}
-        openGraph={{
-          type: "article",
+      <Head>
+        {generateNextSeo({
           description: meta.description,
           title: meta.title,
-          article: {
-            publishedTime: "2021-08-22T02:13:32Z",
-            authors: ["https://www.christiancodes.io/about"],
-            tags: meta.tags,
+          openGraph: {
+            type: "article",
+            description: meta.description,
+            title: meta.title,
+            article: {
+              publishedTime: "2021-08-22T02:13:32Z",
+              authors: ["https://www.christiancodes.io/about"],
+              tags: meta.tags,
+            },
           },
-        }}
-      />
+        })}
+      </Head>
       <Layout>
         <Slice size="xl" className="-mt-6 sm:-mt-0" divider>
           <Heading size="xl" level={1}>

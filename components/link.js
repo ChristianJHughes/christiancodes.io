@@ -8,7 +8,7 @@ export default function Link({
   className,
   children,
   href,
-  subtle,
+  subtle = false,
   size,
   newTab,
   bold,
@@ -25,7 +25,7 @@ export default function Link({
       "font-semibold": !bold && !subtle,
       "font-bold": bold,
     },
-    className
+    className,
   );
 
   const newTabAttributes = newTab
@@ -34,16 +34,15 @@ export default function Link({
 
   if (isInternal) {
     return (
-      (<NextLink
+      <NextLink
         href={href}
         className={classes}
         onClick={href == "/resume" ? handleResumeClick : undefined}
         aria-label={ariaLabel}
-        {...newTabAttributes}>
-
+        {...newTabAttributes}
+      >
         {children}
-
-      </NextLink>)
+      </NextLink>
     );
   }
   return (
@@ -65,8 +64,4 @@ Link.propTypes = {
   children: PropTypes.node,
   subtle: PropTypes.bool,
   size: PropTypes.oneOf(["sm"]),
-};
-
-Link.defaultProps = {
-  subtle: false,
 };

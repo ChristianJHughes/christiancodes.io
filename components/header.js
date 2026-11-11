@@ -1,4 +1,4 @@
-import { IoLogoGithub, IoLogoLinkedin, IoLogoTwitter } from "react-icons/io";
+import { IoLogoGithub, IoLogoLinkedin } from "react-icons/io";
 import cn from "classnames";
 import DarkModeToggle from "./dark-mode-toggle";
 import { Fade as Hamburger } from "hamburger-react";
@@ -6,6 +6,7 @@ import Logo from "./logo";
 import NextLink from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import XIcon from "./x-icon";
 
 function HeaderGroup({ children, isNav }) {
   const Element = isNav ? "nav" : "div";
@@ -40,7 +41,7 @@ function NavigationLink({ href, text }) {
         router.asPath === href,
       "border-transparent": router.asPath != href,
     },
-    "inline-block pt-[6px] pb-1 mx-0.5 font-medium text-l leading-none border-b-2 dark:hover:text-blue-500 hover:text-blue-700"
+    "inline-block pt-[6px] pb-1 mx-0.5 font-medium text-l leading-none border-b-2 dark:hover:text-blue-500 hover:text-blue-700",
   );
 
   return (
@@ -57,13 +58,15 @@ export default function Header({ showBorder }) {
   const router = useRouter();
 
   const headerClasses = cn(
-    "sticky top-0 w-full pl-5 pr-2 py-2 sm:px-6 sm:py-3 space-y-2 bg-white dark:bg-gray-900 border-b bg-white border-gray-200 border-opacity-0 dark:border-opacity-0 duration-300 dark:border-gray-800 z-10 transition-nav h-[65px]",
+    "sticky top-0 w-full pl-5 pr-2 py-2 sm:px-6 sm:py-3 space-y-2 border-b duration-300 z-10 transition-nav",
     {
-      "border-opacity-100 dark:border-opacity-100 backdrop-blur dark:backdrop-blur-lg bg-opacity-95 dark:bg-opacity-95":
+      "border-gray-200 dark:border-gray-800 backdrop-blur-sm dark:backdrop-blur-lg bg-white/95 dark:bg-gray-900/95":
         showBorder,
+      "border-transparent bg-white dark:bg-gray-900": !showBorder,
       "h-[105px]": isOpen,
+      "h-[65px]": !isOpen,
       "animate-fadeDown": router.asPath === "/",
-    }
+    },
   );
 
   const headerItemsClasses = cn(
@@ -71,7 +74,7 @@ export default function Header({ showBorder }) {
     {
       "opacity-0 sm:flex sm:opacity-100 z-[-1] sm:z-auto": !isOpen,
       "opacity-100": isOpen,
-    }
+    },
   );
 
   return (
@@ -104,9 +107,9 @@ export default function Header({ showBorder }) {
               ariaLabel="LinkedIn"
             />
             <SocialLink
-              icon={IoLogoTwitter}
-              href="https://twitter.com/codes_io"
-              ariaLabel="Twitter"
+              icon={XIcon}
+              href="https://x.com/codes_io"
+              ariaLabel="X"
             />
           </HeaderGroup>
           <DarkModeToggle />
