@@ -36,15 +36,15 @@ export default function About() {
                   Dropbox
                 </Link>
                 .
-              </strong>
+              </strong>{" "}
+              Lately, I&apos;ve enabled{" "}
+              <strong>AI powered search experiences</strong> on Dropbox.com.
             </p>
             <p>
               {" "}
-              I previously worked as a <strong>
-                Developer III
-              </strong> for{" "}
+              I previously worked as a <strong>Developer III</strong> for{" "}
               <strong>
-                <Link href="https://twitter.com/DaveRamsey" newTab>
+                <Link href="https://x.com/DaveRamsey" newTab>
                   Dave Ramsey
                 </Link>
               </strong>{" "}
@@ -56,8 +56,8 @@ export default function About() {
               and CMS platforms.
             </p>
             <p>
-              I also worked as a{" "}
-              <strong>Software Development Engineer</strong> at{" "}
+              I also worked as a <strong>Software Development Engineer</strong>{" "}
+              at{" "}
               <strong>
                 <Link href="https://www.amazon.com" newTab>
                   Amazon
@@ -77,9 +77,9 @@ export default function About() {
             </p>{" "}
             <p>
               I love the web, and have a special interest in{" "}
-              <strong>accessible cloud computing</strong>,{" "}
-              <strong>the Jamstack</strong>, and
-              <strong> ergonomic front-end frameworks</strong>.
+              <strong>agentic workflows</strong>,{" "}
+              <strong>polished user interfaces</strong>, and{" "}
+              <strong>ergonomic developer experiences</strong>.
             </p>
             <p>Outside of engineering, I really enjoy:</p>
             <ul>

@@ -1,13 +1,37 @@
 const { fontFamily } = require("tailwindcss/defaultTheme");
 
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,jsx}", "./components/**/*.{js,jsx}"],
   darkMode: "class",
   theme: {
     extend: {
+      // Preserve the existing palette when upgrading from Tailwind 2.
+      colors: {
+        gray: {
+          50: "#f9fafb",
+          100: "#f3f4f6",
+          200: "#e5e7eb",
+          300: "#d1d5db",
+          400: "#9ca3af",
+          500: "#6b7280",
+          600: "#4b5563",
+          700: "#374151",
+          800: "#1f2937",
+          900: "#111827",
+        },
+        blue: {
+          50: "#eff6ff",
+          100: "#dbeafe",
+          200: "#bfdbfe",
+          300: "#93c5fd",
+          400: "#60a5fa",
+          500: "#3b82f6",
+          600: "#2563eb",
+          700: "#1d4ed8",
+          800: "#1e40af",
+          900: "#1e3a8a",
+        },
+      },
       fontFamily: { sans: ["Inter", ...fontFamily.sans] },
-      padding: ["focus"],
       animation: {
         wave: "wave 1.5s linear both 1",
         fadeDown: "fadeDown 0.3s linear",
@@ -35,7 +59,7 @@ module.exports = {
           "75%": {
             transform: "translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg)",
           },
-          "1100%": { transform: "none" },
+          "100%": { transform: "none" },
         },
         fadeDown: {
           from: { opacity: "0", transform: "translateY(-16px)" },
@@ -81,11 +105,11 @@ module.exports = {
               strong: {
                 color: theme("colors.gray.100"),
               },
-              "ol > li::before": {
+              "ol > li::marker": {
                 color: theme("colors.gray.400"),
               },
-              "ul > li::before": {
-                backgroundColor: theme("colors.gray.600"),
+              "ul > li::marker": {
+                color: theme("colors.gray.600"),
               },
               hr: {
                 borderColor: theme("colors.gray.200"),
@@ -130,11 +154,6 @@ module.exports = {
           ],
         },
       }),
-    },
-  },
-  variants: {
-    extend: {
-      typography: ["dark", "hover"],
     },
   },
   plugins: [require("@tailwindcss/typography")],

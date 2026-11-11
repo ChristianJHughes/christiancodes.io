@@ -1,4 +1,4 @@
-import { ArrowDownIcon } from "@heroicons/react/outline";
+import { ArrowDownIcon } from "@heroicons/react/24/outline";
 import { getAllPosts } from "lib/posts";
 import Heading from "components/heading";
 import Layout from "components/layout";

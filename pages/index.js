@@ -1,13 +1,11 @@
 import christianHeadshot from "public/images/christian-headshot.jpeg";
-import { getAllPosts } from "lib/posts";
 import Heading from "components/heading";
 import Image from "next/image";
 import Layout from "components/layout";
 import Link from "components/link";
-import PostPreview from "components/post-preview";
 import Slice from "components/slice";
 
-export default function Home({ posts }) {
+export default function Home() {
   const meta = {
     title: "Christian Codes | Christian Hughes - Software Engineer",
     description:
@@ -40,43 +38,40 @@ export default function Home({ posts }) {
             .
           </Heading>
           <p className="self-center max-w-md mx-auto font-semibold text-gray-700 text-md sm:text-lg dark:text-gray-200">
-            You&apos;ll find me working on the web at Dropbox in beautiful Nashville, TN.
+            You&apos;ll find me working on the web at Dropbox in beautiful
+            Nashville, TN.
           </p>
         </Slice>
 
-        <Slice size="xl" divider>
+        <Slice size="xl" className="pb-10" divider>
           <Heading level={2} size="md">
             💻 Recent Work
           </Heading>
           <Heading level={3} size="sm">
             <Link href="https://www.dropbox.com/" newTab>
-              @ Dropbox
+              Dropbox
             </Link>
           </Heading>
-          <div className="mb-4 prose dark:prose-light">
+          <div className="prose dark:prose-light">
             <ul>
               <li>
-                🚀 Led web onboarding redesign, driving $3.5M+ in new annual revenue
+                🔌 Owning the connectors experience, enabling users to connect
+                third-party apps and custom MCP servers to Dropbox
               </li>
               <li>
-                🖥️ Built personalized sign-up flows across the Dropbox web and desktop apps, serving
-millions of users in 20+ locales
+                🚀 Led web onboarding redesign, driving $3.5M+ in new annual
+                revenue
               </li>
               <li>
-                🧪 Led feature experimentation roadmap in collaboration with Product and Data Science
+                🖥️ Built personalized sign-up flows across the Dropbox web and
+                desktop apps, serving millions of users in 20+ locales
+              </li>
+              <li>
+                🧪 Led feature experimentation roadmap in collaboration with
+                Product and Data Science
               </li>
             </ul>
           </div>
-        </Slice>
-
-        <Slice size="xl" divider>
-          <Heading level={2} size="md">
-            🤓 Recently Published
-          </Heading>
-
-          {getAllPosts().map((postMeta, i) => (
-            <PostPreview meta={postMeta} key={i} />
-          ))}
         </Slice>
       </Layout>
     </>

@@ -1,13 +1,19 @@
-import { MoonIcon, SunIcon } from "@heroicons/react/outline";
-import { useEffect, useState } from "react";
+import { MoonIcon, SunIcon } from "@heroicons/react/24/outline";
 import { Switch } from "@headlessui/react";
+import { useSyncExternalStore } from "react";
 import { useTheme } from "next-themes";
 
-export default function DarkModeToggle() {
-  const [mounted, setMounted] = useState(false);
-  const { resolvedTheme, setTheme } = useTheme();
+const subscribe = () => () => {};
+const getSnapshot = () => true;
+const getServerSnapshot = () => false;
 
-  useEffect(() => setMounted(true), []);
+export default function DarkModeToggle() {
+  const mounted = useSyncExternalStore(
+    subscribe,
+    getSnapshot,
+    getServerSnapshot,
+  );
+  const { resolvedTheme, setTheme } = useTheme();
 
   return (
     <span className="flex items-center justify-center">
@@ -15,7 +21,7 @@ export default function DarkModeToggle() {
       <Switch
         checked={mounted && resolvedTheme == "dark"}
         onChange={() => setTheme(resolvedTheme == "dark" ? "light" : "dark")}
-        className="dark:bg-blue-600 bg-gray-200 relative inline-flex items-center h-5 rounded-full w-9 mx-1.5"
+        className="dark:bg-blue-600 bg-gray-200 relative inline-flex items-center h-5 rounded-full w-9 mx-1.5 cursor-pointer"
       >
         <span className="sr-only">Enable dark mode</span>
         <span

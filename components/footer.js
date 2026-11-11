@@ -50,13 +50,8 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link
-                  subtle
-                  size="sm"
-                  href="https://twitter.com/codes_io"
-                  newTab
-                >
-                  Twitter
+                <Link subtle size="sm" href="https://x.com/codes_io" newTab>
+                  X
                 </Link>
               </li>
               <li>
@@ -81,30 +76,10 @@ export default function Footer() {
                   Resume
                 </Link>
               </li>
-              <li>
-                <Link
-                  subtle
-                  size="sm"
-                  href="https://github.com/ChristianJHughes/devTools"
-                  newTab
-                >
-                  Dev Tools
-                </Link>
-              </li>
-              <li>
-                <Link
-                  subtle
-                  size="sm"
-                  href="https://github.com/ChristianJHughes/advent-of-code"
-                  newTab
-                >
-                  Advent of Code
-                </Link>
-              </li>
             </ol>
           </div>
         </div>
-        <p className="flex-shrink-0 w-full mb-2 text-sm font-semibold leading-relaxed text-center text-gray-800 dark:text-gray-200">
+        <p className="shrink-0 w-full mb-2 text-sm font-semibold leading-relaxed text-center text-gray-800 dark:text-gray-200">
           Built with{" "}
           <Link href="https://nextjs.org/" newTab>
             Next.js
@@ -128,7 +103,7 @@ export default function Footer() {
           </Link>
           .
         </p>
-        <p className="flex-shrink-0 w-full text-sm font-normal text-center text-gray-500 dark:text-gray-400">
+        <p className="shrink-0 w-full text-sm font-normal text-center text-gray-500 dark:text-gray-400">
           &copy; {todaysDate.getFullYear()} Christian Hughes
         </p>
       </div>

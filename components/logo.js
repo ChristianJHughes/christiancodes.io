@@ -1,20 +1,19 @@
 import cn from "classnames";
+import { CommandLineIcon } from "@heroicons/react/24/outline";
 import Link from "next/link";
 import PropTypes from "prop-types";
-import { TerminalIcon } from "@heroicons/react/outline";
 
 export default function Logo({ className }) {
   return (
-    (<Link
+    <Link
       href="/"
-      className={cn("flex items-center h-8 sm:h-10 group -ml-1", className)}>
-
-      <TerminalIcon className="inline-block h-full mr-1 text-black dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-500" />
+      className={cn("flex items-center h-8 sm:h-10 group -ml-1", className)}
+    >
+      <CommandLineIcon className="inline-block h-full mr-1 text-black dark:text-white group-hover:text-blue-700 dark:group-hover:text-blue-500" />
       <span className="text-base font-bold text-black sm:text-xl group-hover:text-blue-700 dark:text-white dark:group-hover:text-blue-500">
         Christian Codes
       </span>
-
-    </Link>)
+    </Link>
   );
 }
 
