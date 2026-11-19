@@ -30,7 +30,8 @@ export default function About() {
               <strong>millions of users</strong>.
             </p>{" "}
             <p>
-              I currently work as a <strong>Senior Software Engineer</strong> at{" "}
+              I&apos;ve most recently worked as a{" "}
+              <strong>Senior Software Engineer</strong> at{" "}
               <strong>
                 <Link href="https://www.dropbox.com/" newTab>
                   Dropbox

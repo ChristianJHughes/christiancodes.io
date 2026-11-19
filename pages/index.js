@@ -38,8 +38,12 @@ export default function Home() {
             .
           </Heading>
           <p className="self-center max-w-md mx-auto font-semibold text-gray-700 text-md sm:text-lg dark:text-gray-200">
-            You&apos;ll find me working on the web at Dropbox in beautiful
-            Nashville, TN.
+            You&apos;ll find me working in beautiful Nashville, TN. Most recently
+            at{" "}
+            <Link href="https://www.dropbox.com/" newTab>
+              Dropbox
+            </Link>
+            .
           </p>
         </Slice>
 
@@ -55,7 +59,7 @@ export default function Home() {
           <div className="prose dark:prose-light">
             <ul>
               <li>
-                🔌 Owning the connectors experience, enabling users to connect
+                🔌 Owned the connectors experience, enabling users to connect
                 third-party apps and custom MCP servers to Dropbox
               </li>
               <li>
